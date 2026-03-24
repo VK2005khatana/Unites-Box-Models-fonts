@@ -1,0 +1,49 @@
+/* Universal selector to handle box-sizing and reset margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.image-container {
+    /* ViewPort units use kiye gaye hain spacing ke liye */
+    /* Left/Right 25% spacing = 50% width bachegi */
+    /* Top/Bottom 10% spacing */
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    
+    /* Content styling */
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Gradient Button Styling */
+.gradient-btn {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+    transition: transform 0.2s;
+}
+
+.gradient-btn:hover {
+    transform: scale(1.05);
+}
